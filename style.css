@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto', Arial, sans-serif;}
+header .font {
+    background-image: url(./images/Overlay.svg);
+    background-size: cover;       /* Ajuste l’image pour couvrir tout l’élément */
+    background-position: center;  /* Centre l’image */
+    background-repeat: no-repeat; /* Évite la répétition de l’image */
+    width: 100%;
+    height: 75vh; /* 100% de la hauteur de l’écran */
+    border-radius: 4%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 15px;
+}
+.nav1{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav2{
+     border: 1px solid red; 
+    display: flex;
+    align-items: center;
+     /* justify-content: space-between;  */
+    width: 100%;
+    margin-left: 30%;
+}
+.logo{
+    /* border: 1px solid red; */
+    font-size: 1.5rem;
+    margin-left: 10%;
+}
+.navChoix{
+    /* border: 1px solid red; */
+   
+}
+.navChoix ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    border: 0;
+    gap: 2.2rem;
+    font-size: 1.3rem;
+    margin-left: 20;
+}
+.icons{
+    gap: 1rem;
+    font-size: 2rem;
+    color: rgb(61, 61, 108);
+    margin-left: 1.5rem;
+}
+
+
+/* From Uiverse.io by iZOXVL code bouton */ 
+button {
+    padding: 10px 25px;
+    border: 2px solid #2c2c2c;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    margin-left: 1.5rem;
+  }
+  
+  button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  button:hover::after {
+    transform: scale(4);
+  }
+  
+  button:hover {
+    border-color: #666666;
+    background: rgb(61, 61, 108);
+  }
+       
+
+
+  /*section hero texte sur l'image*/
+  .bigHero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+  }
+  .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 50%;
+    /* background-image: url(./images/hero-bg.jpg); */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border: 1px solid #bd3c3c;
+  }
+  .hero-text p{
+    font-size: 1.2rem;
+    color:#5dca38;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+
+  }
+.hero-text h1{
+    font-size: 2.7rem;
+    color: rgb(44, 44, 70);
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    width: 40rem;
+    }
+.hero-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 13rem;
+}
+.hero-image{
+    width: 40%;
+    height: 50vh;
+    background-image: url(./images/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #bd3c3c;
+}
