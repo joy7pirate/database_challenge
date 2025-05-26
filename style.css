@@ -59,7 +59,7 @@ header .font {
 
 
 /* From Uiverse.io by iZOXVL code bouton */ 
-button {
+button.boton-elegante{
     padding: 10px 25px;
     border: 2px solid #2c2c2c;
     background-color: #1a1a1a;
@@ -75,7 +75,7 @@ button {
     margin-left: 1.5rem;
   }
   
-  button::after {
+  button.boton-elegante::after {
     content: "";
     position: absolute;
     top: 0;
@@ -91,11 +91,11 @@ button {
     transition: transform 0.5s ease;
   }
   
-  button:hover::after {
+  button.boton-elegante:hover::after {
     transform: scale(4);
   }
   
-  button:hover {
+  button.boton-elegante:hover {
     border-color: #666666;
     background: rgb(61, 61, 108);
   }
@@ -160,3 +160,386 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid #bd3c3c;
 }
+.reservation{
+  display: flex;
+  flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 80vh;
+
+}
+.reservation p{
+  margin-top: 9rem;
+    font-size: 1.2rem;
+    color: #5dca38;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.reservation h2{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* carte partie */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.contact-card {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(60, 72, 88, 0.04);
+  flex: 1 1 0px;
+  min-width: 250px;
+  text-align: left;
+}
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  background: #e6f4ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #3b82f6;
+  margin-bottom: 18px;
+}
+.contact-card h3 {
+  font-size: 1.3em;
+  margin: 0 0 8px 0;
+  font-weight: bold;
+}
+.contact-card p {
+  color: #6b7280;
+  font-size: 1em;
+  margin-bottom: 14px;
+}
+.contact-link {
+  font-weight: 600;
+  color: #22223b;
+  text-decoration: none;
+}
+.contact-link i {
+  margin-right: 8px;
+}
+.contact-link:hover {
+  color: #0891b2;
+}
+/* Pour la séparation entre les cartes, utiliser une bordure droite sauf la dernière */
+.contact-card:not(:last-child) {
+  border-right: 1px solid #e5e7eb;
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-section {
+      flex-direction: column;
+      gap: 16px;
+  }
+  .contact-card:not(:last-child) {
+      border-right: none;
+      border-bottom: 1px solid #e5e7eb;
+  }
+}
+
+/* section about */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  height: 100vh;
+}
+.about-left {
+  flex: 1 1 360px;
+  padding: 40px 24px 0 24px;
+  min-width: 330px;
+  margin-bottom: 3rem;
+}
+.about-left h4 {
+  color: #3b82f6;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin: 0 0 12px 0;
+  letter-spacing: 1px;
+}
+.about-left h1 {
+  font-size: 2.7em;
+  font-weight: bold;
+  margin: 0 0 24px 0;
+  color: #22223b;
+  line-height: 1.1;
+}
+.about-right {
+  flex: 1 1 420px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 40px 24px 0 24px;
+}
+.about-text {
+  max-width: 420px;
+  margin-bottom: 18px;
+  color: #5e6470;
+  font-size: 1.09em;
+  line-height: 1.6;
+  text-align: right;
+}
+.pousse{
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.about-images-wrapper {
+background-image: url(./images/Background.svg);
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  border-radius: 24px;
+
+}
+/* .img-about .image1{
+  width: 50%;
+  height: 20%;
+  border-radius: 24px;
+} */
+ .img-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+.img-about .image1 {
+  width: 30%;        /* Diminue la taille */
+  height: auto;      /* Garde le ratio */
+  border-radius: 24px;
+   display: block; 
+  margin-top: -10rem; /* Monte l'image vers le haut (ajuste la valeur) */
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+@media (max-width: 600px) {
+  .about-left h1 {
+      font-size: 2em;
+  }
+  .about-img1, .about-img2 {
+      width: 49%;
+  }
+  .about-images-wrapper {
+      height: 170px;
+  }
+  .about-bg-shape {
+      height: 120px;
+  }
+}
+
+/* section specialiste */
+
+.specialties-section {
+  text-align: center;
+   max-width: 80%; 
+   height: 100vh;
+  margin: 0 auto;
+  padding: 40px 10px 0 10px;
+}
+.specialties-section h4 {
+  color: #5dca38;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.specialties-section h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+  margin-bottom: 36px;
+  color: #22223b;
+}
+.specialties-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  height: 70vh;
+}
+.speciality-card {
+  background: #fff;
+  border: 1.5px solid #edeef2;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(60, 72, 88, 0.04);
+  width: 20rem;
+  height: 7.67rem;
+  padding: 34px 24px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 275px;
+  transition: box-shadow 0.2s;
+}
+.speciality-card:hover {
+  box-shadow: 0 8px 32px rgba(60, 72, 88, 0.10);
+  border-color: #b7e2fd;
+}
+.speciality-icon {
+  background: #e6f4ff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.speciality-icon img{
+  border-radius: 50%;
+}
+.speciality-title {
+  font-size: 1.18em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #20233d;
+}
+.speciality-desc {
+  color: #6b7280;
+  font-size: 1em;
+  margin-bottom: 18px;
+}
+.speciality-btn {
+  margin-top: auto;
+  background: none;
+  border: none;
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+.speciality-btn:hover {
+  color: #0891b2;
+}
+.speciality-btn svg {
+  margin-left: 7px;
+  width: 16px;
+  height: 16px;
+}
+@media (max-width: 950px) {
+  .specialties-grid {
+      gap: 18px;
+  }
+  .speciality-card {
+      width: 90vw;
+      max-width: 320px;
+  }
+}
+ /* bouton de specialite */
+ .btnSpe {
+  width: 100%;
+  display: block;
+  text-align: center; /* Centrer le bouton si besoin */
+  margin-top: 2em;    /* Optionnel, pour l'espacement */
+}
+
+
+ button.learn-more {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+ }
+ 
+ button.learn-more {
+  width: 12rem;
+  height: auto;
+ }
+ 
+ button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+ }
+ 
+ button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+ 
+ button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+ }
+ 
+ button:hover .circle {
+  width: 100%;
+ }
+ 
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ button:hover .button-text {
+  color: #fff;
+ }
